@@ -1,9 +1,15 @@
-import Image from 'next/image'
+import Header from "./components/header"
+import Home from "./components/home"
+import Projects from "./components/projects"
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
+    <main className='bg-white'>
+        <Header />
+        <section className='min-h-screen px-10'>
+          <Home />
+          <Projects />
+        </section>
     </main>
   )
 }
