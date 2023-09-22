@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  env: {
+    GETFORM_URL: process.env.GETFORM_URL,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
