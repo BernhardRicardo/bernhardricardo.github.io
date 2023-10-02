@@ -3,6 +3,22 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ImageSlider = ({ images }) => {
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) nextImage();
+    if (isRightSwipe) previousImage();
+  };
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -14,7 +30,6 @@ const ImageSlider = ({ images }) => {
       currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1
     );
   };
-
   return (
     <div className="relative w-full overflow-hidden">
       <button
@@ -60,6 +75,9 @@ const ImageSlider = ({ images }) => {
         style={{
           transform: `translateX(-${currentImageIndex * 100}%)`, // Slide images horizontally
         }}
+        onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
       >
         {images.map((image, index) => (
           <div
