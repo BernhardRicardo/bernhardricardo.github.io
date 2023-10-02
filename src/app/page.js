@@ -9,7 +9,7 @@ export default function Page() {
     <main className="bg-white relative">
       <Header />
       <section className="min-h-screen w-full flex justify-center px-10">
-        <div className="w-3/5">
+        <div className="w-full md:w-3/5">
           <Home />
           <About />
           <Projects />

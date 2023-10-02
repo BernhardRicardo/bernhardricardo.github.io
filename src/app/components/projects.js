@@ -23,10 +23,12 @@ export default function Projects() {
     },
   ];
   return (
-    <section className="min-h-screen pb-56 z-10" id="projects">
+    <section className="min-h-screen pb-40 z-10" id="projects">
       <div className=" pt-20">
-        <h2 className="text-5xl py-2 text-teal-600 font-medium">Projects</h2>
-        <p className="text-md py-5 leading-8 text-gray-800">
+        <h2 className="text-3xl md:text-5xl text-teal-600 font-medium">
+          Projects
+        </h2>
+        <p className="text-md md:text-md md:text-base py-5 leading-5 md:leading-8 text-gray-800 text-justify">
           Here are some of my projects that I've been working on.
         </p>
       </div>
@@ -61,7 +63,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <section />
+        <section className=" pt-40 md:pt-0" />
         <div className="bg-white shadow-lg rounded-lg flex lg:flex-row flex-col mx-auto">
           <div className="w-full h-full min-h-min">
             <ImageSlider images={pizzaSlides} />

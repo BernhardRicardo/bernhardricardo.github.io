@@ -38,19 +38,18 @@ export default function Contact() {
     }
   };
   return (
-    <section className="min-h-screen flex items-center pb-36" id="contact">
+    <section className="min-h-screen flex items-center pb-28" id="contact">
       <div className="w-full">
-        <h2 className="text-5xl py-2 text-teal-600 font-medium">Contact me</h2>
-        <p className="text-md  leading-8 text-gray-800 text-justify">
-          Alternatively, you can reach me at {"brnhricardo@gmail.com"}
-        </p>
+        <h2 className="text-3xl md:text-5xl text-teal-600 font-medium">
+          Contact me
+        </h2>
         <form
           className="flex flex-col gap-4 mt-4"
           ref={formRef}
           onSubmit={contact_handler}
         >
           <div className="flex flex-col">
-            <label className="pt-2" htmlFor="name">
+            <label className="text-sm md:text-md pt-2" htmlFor="name">
               Name:
             </label>
             <input
@@ -59,7 +58,7 @@ export default function Contact() {
               name="name"
               required
             ></input>
-            <label className="pt-2" htmlFor="email">
+            <label className="text-sm md:text-md pt-2" htmlFor="email">
               Email:
             </label>
             <input
@@ -68,7 +67,7 @@ export default function Contact() {
               name="email"
               required
             ></input>
-            <label className="pt-2" htmlFor="message">
+            <label className="text-sm md:text-md pt-2" htmlFor="message">
               Message:
             </label>
             <textarea
@@ -78,13 +77,16 @@ export default function Contact() {
               required
             ></textarea>
             <button
-              type="submit"
+              type="text-sm md:text-md submit"
               className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded mt-4"
             >
               Send
             </button>
           </div>
         </form>
+        <p className="flex justify-end text-sm md:text-md md:text-base py-5 leading-5 md:leading-8 text-gray-800 md:text-justify">
+          Alternatively, you can reach me at : {"brnhricardo@gmail.com"}
+        </p>
       </div>
     </section>
   );

@@ -10,29 +10,7 @@ function Header() {
   };
 
   return (
-    <nav className="flex items-center justify-between sticky top-0 flex-wrap bg-white py-6 px-11 z-50">
-      <div className="block lg:hidden">
-        <button
-          className="flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-black"
-          onClick={toggleMenu}
-        >
-          {/* Sandwich Button Icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </div>
+    <nav className="flex items-center justify-end sticky top-0 flex-wrap bg-white py-6 px-11 md:z-50 -z-10">
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"

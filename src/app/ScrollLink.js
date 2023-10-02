@@ -23,7 +23,7 @@ function ScrollLink({ to, children }) {
 
   return (
     <a
-      className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4"
+      className="block mt-4 text-right lg:inline-block lg:mt-0 text-black hover:text-black mr-4"
       href="#"
       onClick={scrollToSection}
     >

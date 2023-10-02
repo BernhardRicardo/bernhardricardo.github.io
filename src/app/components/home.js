@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <section className="min-h-screen" id="home">
       <div className="text-center">
-        <h2 className="text-5xl py-8 text-teal-600 font-medium">
+        <h2 className="text-2xl md:text-5xl py-8 pt-16 text-teal-600 font-medium  ">
           Bernhard Ricardo Putranto
         </h2>
-        <h3 className="text-2xl py-2">Web Developer</h3>
-        <p className="text-md py-5 leading-8 text-gray-800">
+        <h3 className="text-2xl md:text-3xl py-2">Web Developer</h3>
+        <p className="text-md py-5 leading-8 md:text-base text-gray-800">
           Hi there! I'm a final-year Computer Science student based in
           Darmstadt, Germany. I'm passionate about building web applications.
         </p>
