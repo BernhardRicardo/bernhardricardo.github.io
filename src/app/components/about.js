@@ -1,3 +1,13 @@
+import Image from "next/image";
+import dockerlogo from "../../../public/docker.png";
+import githublogo from "../../../public/github.png";
+import javalogo from "../../../public/java.png";
+import javascriptlogo from "../../../public/javascript.png";
+import phplogo from "../../../public/php.png";
+import postgresqllogo from "../../../public/postgresql.png";
+import reactlogo from "../../../public/react.png";
+import tailwindlogo from "../../../public/tailwind.png";
+
 export default function About() {
   return (
     <section className="min-h-screen flex items-center" id="about">
@@ -16,6 +26,47 @@ export default function About() {
           opportunities to transform concepts into reality, one line of code at
           a time.
         </p>
+        <div className="flex flex-wrap justify-end">
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image src={reactlogo} alt="react logo" width={50} height={50} />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image
+              src={javascriptlogo}
+              alt="javascript logo"
+              width={50}
+              height={50}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image src={phplogo} alt="php logo" width={50} height={50} />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image src={javalogo} alt="java logo" width={50} height={50} />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image
+              src={tailwindlogo}
+              alt="tailwind logo"
+              width={50}
+              height={50}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image
+              src={postgresqllogo}
+              alt="postgresql logo"
+              width={50}
+              height={50}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image src={githublogo} alt="github logo" width={50} height={50} />
+          </div>
+          <div className="flex flex-col items-center justify-center p-5">
+            <Image src={dockerlogo} alt="docker logo" width={50} height={50} />
+          </div>
+        </div>
       </div>
     </section>
   );

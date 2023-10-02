@@ -1,8 +1,29 @@
-import Image from "next/image";
-import web1 from "../../../public/web1.png";
+import pizzabacker from "../../../public/pizzabacker.png";
+import pizzacustomer from "../../../public/pizzacustomer.png";
+import pizzadelivery from "../../../public/pizzadelivery.png";
+import pizzamenu from "../../../public/pizzamenu.png";
+import ImageSlider from "../ImageSlider";
 export default function Projects() {
+  const pizzaSlides = [
+    {
+      img: pizzamenu,
+      title: "Menu Page",
+    },
+    {
+      img: pizzacustomer,
+      title: "Customer Page",
+    },
+    {
+      img: pizzabacker,
+      title: "Backer Page",
+    },
+    {
+      img: pizzadelivery,
+      title: "Delivery Page",
+    },
+  ];
   return (
-    <section className="min-h-screen pb-56" id="projects">
+    <section className="min-h-screen pb-56 z-10" id="projects">
       <div className=" pt-20">
         <h2 className="text-5xl py-2 text-teal-600 font-medium">Projects</h2>
         <p className="text-md py-5 leading-8 text-gray-800">
@@ -12,12 +33,7 @@ export default function Projects() {
       <div className="flex flex-col max-w-4xl w-full lg:gap-28 mx-auto gap-5">
         <div className="bg-white shadow-lg rounded-lg flex lg:flex-row flex-col mx-auto">
           <div className="w-full h-full min-h-min">
-            <Image
-              src={web1}
-              alt="Warehouse Management System"
-              layout="relative"
-              objectFit="cover"
-            />
+            <ImageSlider images={pizzaSlides} />
           </div>
           <div className="lg:w-8/12 flex flex-col justify-between">
             <div className="p-4">
@@ -48,12 +64,7 @@ export default function Projects() {
         <section />
         <div className="bg-white shadow-lg rounded-lg flex lg:flex-row flex-col mx-auto">
           <div className="w-full h-full min-h-min">
-            <Image
-              src={web1}
-              alt="Warehouse Management System"
-              layout="relative"
-              objectFit="cover"
-            />
+            <ImageSlider images={pizzaSlides} />
           </div>
           <div className="lg:w-8/12 flex flex-col justify-between">
             <div className="p-4">

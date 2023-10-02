@@ -8,6 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="wave.svg"></link>
       <body>{children}</body>
     </html>
   );
