@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GrDocumentPdf } from "react-icons/gr";
-import deved from "../../../public/dev-ed-wave.png";
+import bernhard from "../../../public/bernhard.jpg";
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         </a>
       </div>
       <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-10 overflow-hidden">
-        <Image src={deved} alt="dev ed" layout="fill" objectFit="cover" />
+        <Image src={bernhard} alt="dev ed" layout="fill" objectFit="cover" />
       </div>
     </section>
   );
