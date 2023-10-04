@@ -3,10 +3,14 @@ import { useEffect, useState } from "react";
 function ScrollLink({ to, children }) {
   const [isScrolling, setIsScrolling] = useState(false);
 
+  const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+
   const scrollToSection = (e) => {
     e.preventDefault();
 
-    if (isScrolling) {
+    if (isMobileDevice || isScrolling) {
+      // Disable smooth scrolling for mobile devices
+      window.location.href = to;
       return;
     }
 
@@ -41,7 +45,7 @@ function ScrollLink({ to, children }) {
   return (
     <a
       className="block mt-4 text-right lg:inline-block lg:mt-0 text-black hover:text-black mr-4"
-      href="#"
+      href={to}
       onClick={scrollToSection}
     >
       {children}
