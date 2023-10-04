@@ -12,8 +12,9 @@ export default function Home() {
         </h2>
         <h3 className="text-2xl md:text-3xl py-2">Web Developer</h3>
         <p className="text-md py-5 leading-8 md:text-base text-gray-800">
-          Hi there! I'm a final-year Computer Science student based in
-          Darmstadt, Germany. I'm passionate about building web applications.
+          Hi there! I&apos;m a final-year Computer Science student based in
+          Darmstadt, Germany. I&apos;m passionate about building web
+          applications.
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 text-gray-600">

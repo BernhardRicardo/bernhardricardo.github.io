@@ -52,7 +52,7 @@ export default function Projects() {
           Projects
         </h2>
         <p className="text-md md:text-md md:text-base py-5 leading-5 md:leading-8 text-gray-800 text-justify">
-          Here are some of my projects that I've been working on.
+          Here are some of my projects that I&apos;ve been working on.
         </p>
       </div>
       <div className="flex flex-col max-w-4xl w-full 2xl:gap-28 mx-auto gap-5">

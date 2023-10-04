@@ -23,8 +23,8 @@ export default function About() {
           web applications. With proficiency in React and other programming
           languages, I thrive on crafting elegant code and enhancing user
           experiences. My experiences span algorithm design, software
-          development, and web technologies, and I'm always eager to explore
-          emerging trends and technologies.
+          development, and web technologies, and I&apos;m always eager to
+          explore emerging trends and technologies.
         </p>
         <div className="flex flex-wrap justify-center md:justify-end">
           <div className="flex flex-col items-center justify-center p-2 md:p-5">
