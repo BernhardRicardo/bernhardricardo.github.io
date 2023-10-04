@@ -1,16 +1,27 @@
-"use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function ScrollLink({ to, children }) {
+  const [isScrolling, setIsScrolling] = useState(false);
+
   const scrollToSection = (e) => {
     e.preventDefault();
+
+    if (isScrolling) {
+      return;
+    }
+
     const section = document.querySelector(to);
 
     if (section) {
+      setIsScrolling(true);
       window.scrollTo({
         top: section.offsetTop,
         behavior: "smooth",
       });
+
+      setTimeout(() => {
+        setIsScrolling(false);
+      }, 1000);
     }
   };
 
