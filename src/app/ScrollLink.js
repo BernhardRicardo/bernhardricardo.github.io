@@ -14,19 +14,20 @@ function ScrollLink({ to, children }) {
 
     if (section) {
       setIsScrolling(true);
-      const offset = section.getBoundingClientRect().top;
 
-      window.scrollTo({
-        top: window.scrollY + offset,
+      // Calculate the scroll amount based on the section's position
+      const scrollAmount = section.getBoundingClientRect().top;
+
+      // Scroll smoothly by a specified amount (adjust as needed)
+      window.scrollBy({
+        top: scrollAmount,
         behavior: "smooth",
       });
 
-      const scrollEndListener = () => {
+      // Set a timeout to reset the scrolling state after the animation completes
+      setTimeout(() => {
         setIsScrolling(false);
-        window.removeEventListener("scroll", scrollEndListener);
-      };
-
-      window.addEventListener("scroll", scrollEndListener);
+      }, 1000); // Adjust the delay as needed to match the scroll animation duration
     }
   };
 
