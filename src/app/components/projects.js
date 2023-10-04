@@ -75,7 +75,9 @@ export default function Projects() {
               <div className="flex p-4 border-t justify-end border-gray-300 text-gray-700">
                 <div className="flex-none inline-flex items-center">
                   <a
-                    href="#"
+                    href="https://github.com/GBT-Developer/warehouse-management-system/tree/demo"
+                    rel="noreferrer"
+                    target={"_blank"}
                     className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm"
                   >
                     Demo
@@ -107,7 +109,9 @@ export default function Projects() {
               <div className="flex p-4 border-t justify-end border-gray-300 text-gray-700">
                 <div className="flex-none inline-flex items-center">
                   <a
-                    href="#"
+                    href="https://github.com/BernhardRicardo/pizza-service"
+                    rel="noreferrer"
+                    target={"_blank"}
                     className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow text-sm"
                   >
                     Demo
