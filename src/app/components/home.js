@@ -27,7 +27,7 @@ export default function Home() {
         </a>
         <a
           href="../../..//putranto_lebenslauf.pdf"
-          download
+          target="_blank"
           className="text-4xl text-black hover:text-black mx-2"
         >
           <GrDocumentPdf />
