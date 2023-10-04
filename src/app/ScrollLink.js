@@ -14,14 +14,19 @@ function ScrollLink({ to, children }) {
 
     if (section) {
       setIsScrolling(true);
+      const offset = section.getBoundingClientRect().top;
+
       window.scrollTo({
-        top: section.offsetTop,
+        top: window.scrollY + offset,
         behavior: "smooth",
       });
 
-      setTimeout(() => {
+      const scrollEndListener = () => {
         setIsScrolling(false);
-      }, 1000);
+        window.removeEventListener("scroll", scrollEndListener);
+      };
+
+      window.addEventListener("scroll", scrollEndListener);
     }
   };
 
