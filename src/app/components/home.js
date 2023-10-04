@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { GrDocumentPdf } from "react-icons/gr";
 import deved from "../../../public/dev-ed-wave.png";
 
 export default function Home() {
@@ -22,6 +23,13 @@ export default function Home() {
           className="text-4xl text-black hover:text-black mx-2"
         >
           <AiFillLinkedin />
+        </a>
+        <a
+          href="../../../public/putranto_lebenslauf.pdf"
+          download
+          className="text-4xl text-black hover:text-black mx-2"
+        >
+          <GrDocumentPdf />
         </a>
         <a
           href="https://github.com/BernhardRicardo"
