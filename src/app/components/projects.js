@@ -2,6 +2,10 @@ import pizzabacker from "../../../public/pizzabacker.png";
 import pizzacustomer from "../../../public/pizzacustomer.png";
 import pizzadelivery from "../../../public/pizzadelivery.png";
 import pizzamenu from "../../../public/pizzamenu.png";
+import warehousehistory from "../../../public/warehouse-history.png";
+import warehousehome from "../../../public/warehouse-home.png";
+import warehousesupplier from "../../../public/warehouse-supplier.png";
+import warehousetransaction from "../../../public/warehouse-transaction.png";
 import ImageSlider from "../ImageSlider";
 export default function Projects() {
   const pizzaSlides = [
@@ -22,9 +26,28 @@ export default function Projects() {
       title: "Delivery Page",
     },
   ];
+
+  const warehouseSlides = [
+    {
+      img: warehousehome,
+      title: "Home Page",
+    },
+    {
+      img: warehousesupplier,
+      title: "Supplier Page",
+    },
+    {
+      img: warehousetransaction,
+      title: "Transaction Page",
+    },
+    {
+      img: warehousehistory,
+      title: "History Page",
+    },
+  ];
   return (
     <section className="min-h-screen pb-40 z-10" id="projects">
-      <div className=" pt-20">
+      <div className=" pt-14">
         <h2 className="text-3xl md:text-5xl text-teal-600 font-medium">
           Projects
         </h2>
@@ -32,14 +55,14 @@ export default function Projects() {
           Here are some of my projects that I've been working on.
         </p>
       </div>
-      <div className="flex flex-col max-w-4xl w-full lg:gap-28 mx-auto gap-5">
-        <div className="bg-white shadow-lg rounded-lg flex lg:flex-row flex-col mx-auto">
+      <div className="flex flex-col max-w-4xl w-full 2xl:gap-28 mx-auto gap-5">
+        <div className="bg-white shadow-lg rounded-lg flex 2xl:flex-row flex-col mx-auto">
           <div className="w-full h-full min-h-min">
-            <ImageSlider images={pizzaSlides} />
+            <ImageSlider images={warehouseSlides} />
           </div>
-          <div className="lg:w-8/12 flex flex-col justify-between">
+          <div className="2xl:w-6/12 flex flex-col justify-between">
             <div className="p-4">
-              <h1 className="font-bold lg:text-xl text-sm mb-2">
+              <h1 className="font-bold 2xl:text-xl text-sm mb-2">
                 Warehouse Management System
               </h1>
               <p className="text-gray-700 lg:text-base text-xs">
@@ -57,20 +80,21 @@ export default function Projects() {
                   >
                     Demo
                   </a>
+                  <section />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <section className=" pt-40 md:pt-0" />
-        <div className="bg-white shadow-lg rounded-lg flex lg:flex-row flex-col mx-auto">
+        {/* <section className=" pt-40 2xl:pt-0" /> */}
+        <div className="my-28 md:my-12 bg-white shadow-lg rounded-lg flex 2xl:flex-row flex-col mx-auto">
           <div className="w-full h-full min-h-min">
             <ImageSlider images={pizzaSlides} />
           </div>
-          <div className="lg:w-8/12 flex flex-col justify-between">
+          <div className="2xl:w-6/12 flex flex-col justify-between">
             <div className="p-4">
-              <h1 className="font-bold lg:text-xl text-sm mb-2">
+              <h1 className="font-bold 2xl:text-xl text-sm mb-2">
                 Pizza Service
               </h1>
               <p className="text-gray-700 lg:text-base text-xs">

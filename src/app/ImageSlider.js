@@ -89,7 +89,7 @@ const ImageSlider = ({ images }) => {
               src={image.img}
               alt="Project Screenshot"
               layout="responsive"
-              width={1920}
+              // width={1920}
               height={1080}
             />
           </div>
