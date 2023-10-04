@@ -85,7 +85,7 @@ export default function Contact() {
           </div>
         </form>
         <p className="flex justify-end text-sm md:text-md md:text-base py-5 leading-5 md:leading-8 text-gray-800 md:text-justify">
-          Alternatively, you can reach me at : {"brnhricardo@gmail.com"}
+          Alternatively, you can reach me at : {"bernhard.r.putranto@gmail.com"}
         </p>
       </div>
     </section>
