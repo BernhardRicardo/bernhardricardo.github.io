@@ -26,7 +26,7 @@ export default function Home() {
           <AiFillLinkedin />
         </a>
         <a
-          href="../../../public/putranto_lebenslauf.pdf"
+          href="../../..//putranto_lebenslauf.pdf"
           download
           className="text-4xl text-black hover:text-black mx-2"
         >
