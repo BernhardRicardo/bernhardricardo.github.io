@@ -38,7 +38,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="min-h-screen flex items-center pb-28" id="contact">
+    <section className="py-28 items-center" id="contact">
       <div className="w-full">
         <h2 className="text-3xl md:text-5xl text-teal-600 font-medium">
           Contact me
@@ -84,7 +84,7 @@ export default function Contact() {
             </button>
           </div>
         </form>
-        <p className="flex justify-end text-sm md:text-md md:text-base py-5 leading-5 md:leading-8 text-gray-800 md:text-justify">
+        <p className="flex justify-end text-sm md:text-md md:text-base pt-5 leading-5 md:leading-8 text-gray-800 md:text-justify">
           Alternatively, you can reach me at : {"bernhard.r.putranto@gmail.com"}
         </p>
       </div>

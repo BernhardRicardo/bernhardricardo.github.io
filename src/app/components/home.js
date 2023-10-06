@@ -5,9 +5,9 @@ import bernhard from "../../../public/bernhard.jpg";
 
 export default function Home() {
   return (
-    <section className="min-h-screen" id="home">
+    <section className="" id="home">
       <div className="text-center">
-        <h2 className="text-2xl md:text-5xl py-8 pt-16 text-teal-600 font-medium  ">
+        <h2 className="text-2xl md:text-5xl py-8 pt-28 text-teal-600 font-medium  ">
           Bernhard Ricardo Putranto
         </h2>
         <h3 className="text-2xl md:text-3xl py-2">Web Developer</h3>

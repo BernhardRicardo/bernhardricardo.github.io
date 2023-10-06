@@ -10,7 +10,7 @@ import tailwindlogo from "../../../public/tailwind.png";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center" id="about">
+    <section className="min-h-screen flex items-center pt-24 " id="about">
       <div className=" pb-24 md:pb-24 max-w-screen-lg mx-auto">
         <h2 className="text-3xl md:text-5xl text-teal-600 font-medium">
           About me
