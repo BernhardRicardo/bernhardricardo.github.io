@@ -40,7 +40,7 @@ export default function Home() {
           <AiFillGithub />
         </a>
       </div>
-      <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-10 overflow-hidden">
+      <div className="relative mx-auto bg-gradient-to-b rounded-full w-60 h-60 mt-10 overflow-hidden">
         <Image src={bernhard} alt="dev ed" layout="fill" objectFit="cover" />
       </div>
     </section>
