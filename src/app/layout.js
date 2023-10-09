@@ -10,6 +10,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="wave.svg"></link>
       <body>{children}</body>
+      <meta
+        name="theme-color"
+        content="#FFFFFF"
+        media="(prefers-color-scheme: light)"
+      ></meta>
     </html>
   );
 }
