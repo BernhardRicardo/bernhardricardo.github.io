@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { GrDocumentPdf } from "react-icons/gr";
 import bernhard from "../../../public/bernhard.jpg";
+import cv from "../../../public/cv.png";
 
 export default function Home() {
   return (
     <section className="" id="home">
       <div className="text-center">
-        <h2 className="text-2xl md:text-5xl py-8 pt-28 text-teal-600 font-medium  ">
+        <h2 className="text-2xl md:text-5xl py-8 text-teal-600 font-medium  ">
           Bernhard Ricardo Putranto
         </h2>
         <h3 className="text-2xl md:text-3xl py-2">Web Developer</h3>
@@ -25,12 +25,13 @@ export default function Home() {
         >
           <AiFillLinkedin />
         </a>
+        {/* cv icon */}
         <a
-          href="../../..//putranto_lebenslauf.pdf"
+          href="../../..//CV_Putranto.pdf"
           target="_blank"
           className="text-4xl text-black hover:text-black mx-2"
         >
-          <GrDocumentPdf />
+          <Image src={cv} alt="cv" width={35} height={35} />
         </a>
         <a
           href="https://github.com/BernhardRicardo"
